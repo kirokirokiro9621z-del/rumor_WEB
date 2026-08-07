@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+body{
+    font-family:"Noto Sans JP",sans-serif;
+    margin:0;
+}
+
+.news{
+    padding:15px;
+}
+
+.news a{
+    text-decoration:none;
+    color:#0b5cad;
+}
+
+.news a:hover{
+    color:#ff6600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="news">
+
+<div id="news-list">
+</div>
+
+</div>
+
+<script>
+const GAS_URL = "https://script.google.com/macros/s/AKfycbx2XSKjzi31XAupA5WS1qb6ToabXX2m1iaJ3RBXLsGZyCrz2S4v1zE-968cdRkbnzS7/exec";
+
+fetch(GAS_URL)
+  .then(response => response.json())
+  .then(data => {
+
+    let html = "";
+
+    for (let i = 1; i < Math.min(data.length, 6); i++) {
+
+      const date = new Date(data[i][0]).toLocaleDateString(
+          'ja-JP',
+          { year: 'numeric', month: 'long', day: 'numeric' }
+      );
+      html += `
+
+        <h3>${date}</h3>
+        <ul>
+          <li>
+            <a href="${data[i][2]}" target="_blank">
+              ${data[i][1]}
+            </a>
+          </li>
+        </ul>
+      `;
+
+    }
+
+    document.getElementById("news-list").innerHTML = html;
+
+  })
+  .catch(error => console.error(error));
+</script>
+
+</body>
+</html>
