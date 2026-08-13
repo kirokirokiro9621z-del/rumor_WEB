@@ -41,7 +41,7 @@ fetch(GAS_URL)
 
     let html = "";
 
-    for (let i = 1; i < Math.min(data.length, 6); i++) {
+    for (let i = 0; i < Math.min(data.length, 5); i++) {
 
       const date = new Date(data[i][0]).toLocaleDateString(
           'ja-JP',
