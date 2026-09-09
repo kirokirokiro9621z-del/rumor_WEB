@@ -1,303 +1,1230 @@
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMRZEHM3Y6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-JMRZEHM3Y6');
   </script>
 
-  <!-- ページタイトル（検索で最重要） -->
-  <title>rumor編集部｜AIニュース・キャラ世界観・最新トレンド</title>
+  <!-- SEO -->
+  <title>rumor編集部｜AIと人がつくるニュース・世界の変化観測局</title>
 
-  <!-- 検索結果に表示される説明文 -->
-  <meta name="description" content="AI3連携（Copilot・Claude・ChatGPT）でニュースを生成するrumor編集部。ちぃ・じっとん・モルトが生活者視点で最新情報を届けます。">
+  <meta
+    name="description"
+    content="rumor編集部は、AIと人が協力してニュースを整理・分析し、生活者の視点から世界の変化を届けるニュースプロジェクトです。ちぃ・じっトン・モルトと一緒に、ニュースを知り、考える時間を。"
+  >
 
-  <!-- キーワード -->
-  <meta name="keywords" content="AIニュース, キャラ世界観, rumor, ちぃ, じっとん, モルト, X広告, YouTubeショート, LINEオープンチャット">
+  <meta
+    name="keywords"
+    content="rumor編集部, AIニュース, 世界ニュース, ニュース解説, AI編集部, ちぃ, じっトン, モルト, 世界の変化, ニュース"
+  >
 
-  <!-- SNS共有時の見た目（OGP） -->
-  <meta property="og:title" content="rumor編集部｜AIニュース・キャラ世界観">
-  <meta property="og:description" content="AI3連携でニュースを生成するrumor編集部。ちぃ・じっとん・モルトが生活者視点で最新情報を届けます。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://your-domain.com">
-  <meta property="og:image" content="https://your-domain.com/ogp.jpg">
+  <meta name="author" content="rumor編集部">
 
-  <!-- モバイル最適化 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-  body {
-    font-family: "Noto Sans JP", sans-serif;
-    line-height: 1.8;
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
 
-    background: #f4f8fc;
-    color: #333;
-  }
+  <!-- OGP -->
+  <!-- GitHub Pagesの正式URLが分かったらここを変更 -->
+  <meta property="og:title"
+        content="rumor編集部｜AIと人がつくるニュース">
 
-  h1 {
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    margin-bottom: 25px;
-  }
+  <meta property="og:description"
+        content="AIと人が協力してニュースを整理・分析。ちぃ・じっトン・モルトと一緒に、世界の変化をわかりやすく届けます。">
 
-  header {
-    background: linear-gradient(135deg, #0b5cad, #4a90e2);
-    color: white;
-    padding: 35px 20px;
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+  <meta property="og:type"
+        content="website">
 
-  h2 {
-    font-size: 22px;
-    margin-top: 30px;
-    background: #0b5cad;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 8px;
-  }
+  <meta property="og:url"
+        content="YOUR-GITHUB-PAGES-URL">
 
-  h3 {
-    font-size: 18px;
-    margin-top: 15px;
-  }
+  <meta property="og:image"
+        content="YOUR-GITHUB-PAGES-URL/images/rumor_logo.png">
 
-  ul {
-    padding-left: 20px;
-  }
+  <meta property="og:locale"
+        content="ja_JP">
 
-  footer {
-    margin-top: 40px;
-    font-size: 14px;
-    color: #666;
-    text-align: center;
-  }
 
-  section {
-    background: white;
-    padding: 20px;
-    margin: 25px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
+  <!-- X / Twitter -->
+  <meta name="twitter:card"
+        content="summary_large_image">
 
-.button {
-  display:inline-block;
-  background:#0b5cad;
-  color:white;
-  padding:15px 30px;
+  <meta name="twitter:title"
+        content="rumor編集部｜AIと人がつくるニュース">
 
-  border: 3px solid #000000;   /* ← この1行を追加 */
+  <meta name="twitter:description"
+        content="AIと人が協力して、世界の変化をわかりやすく届けます。">
 
-  border-radius:10px;
-  text-decoration:none;
-  font-size:20px;
-  font-weight:bold;
-  box-shadow:4px 4px 0 #08467c;
-  transition:0.2s;
-}
+  <meta name="twitter:image"
+        content="YOUR-GITHUB-PAGES-URL/images/rumor_logo.png">
 
-.button:hover {
-  background: #08467c;
-  transform: translate(2px,2px);
-  box-shadow: 2px 2px 0 #08467c;
-}
 
-nav {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+  <!-- =========================
+       CSS
+  ========================== -->
 
-nav {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  <style>
 
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-nav a {
-    display: inline-block;
-    background: #0b5cad;
-    color: white;
 
-    padding: 10px 18px;
+    html {
+      scroll-behavior: smooth;
+    }
 
-    border: 2px solid #063b72;
 
-    border-radius: 8px;
+    body {
 
-    text-decoration: none;
+      font-family:
+        "Noto Sans JP",
+        "Hiragino Kaku Gothic ProN",
+        Meiryo,
+        sans-serif;
 
-    margin: 5px;
+      line-height: 1.8;
 
-    box-shadow: 3px 3px 0 #555;
-}
+      margin: 0;
 
-nav a:hover {
-  color: #ff6600;
-}
+      background:
+        linear-gradient(
+          180deg,
+          #eef6ff 0%,
+          #f8fbff 45%,
+          #ffffff 100%
+        );
 
-</style>
+      color: #333;
 
+      font-size: 16px;
+    }
+
+
+    .container {
+
+      max-width: 1000px;
+
+      margin: 0 auto;
+
+      padding: 0 18px;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+
+      background:
+        linear-gradient(
+          135deg,
+          #0756a0,
+          #368be0
+        );
+
+      color: white;
+
+      padding: 35px 20px 45px;
+
+      text-align: center;
+
+      border-radius: 0 0 30px 30px;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.12);
+    }
+
+
+    /*
+      rumorのメインビジュアル
+    */
+
+    .rumor-logo {
+
+      width: min(92%, 680px);
+
+      max-height: 340px;
+
+      object-fit: contain;
+
+      display: block;
+
+      margin: 0 auto 18px;
+
+      border-radius: 22px;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.20);
+    }
+
+
+    header h1 {
+
+      font-size: clamp(34px, 7vw, 56px);
+
+      margin: 0 0 8px;
+
+      letter-spacing: 3px;
+
+      font-weight: 800;
+
+      text-shadow:
+        2px 3px 0 rgba(0,0,0,0.15);
+    }
+
+
+    header .subtitle {
+
+      font-size: clamp(16px, 3vw, 21px);
+
+      margin: 0;
+
+      font-weight: bold;
+    }
+
+
+    header .catch {
+
+      max-width: 720px;
+
+      margin: 18px auto 0;
+
+      font-size: 15px;
+
+      opacity: 0.95;
+    }
+
+
+    /* =========================
+       NAV
+    ========================== */
+
+    nav {
+
+      background: white;
+
+      padding: 14px;
+
+      margin: 20px auto 30px;
+
+      border-radius: 14px;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+      box-shadow:
+        0 3px 12px rgba(0,0,0,0.08);
+    }
+
+
+    nav a {
+
+      display: inline-block;
+
+      background: #0b5cad;
+
+      color: white;
+
+      padding: 9px 15px;
+
+      border: 2px solid #063b72;
+
+      border-radius: 8px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      font-size: 14px;
+
+      box-shadow:
+        3px 3px 0 #555;
+
+      transition: 0.2s;
+    }
+
+
+    nav a:hover {
+
+      background: #08467c;
+
+      transform: translate(2px,2px);
+
+      box-shadow:
+        1px 1px 0 #555;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================== */
+
+    .intro {
+
+      background: white;
+
+      padding: 30px 25px;
+
+      margin-bottom: 30px;
+
+      border-radius: 18px;
+
+      text-align: center;
+
+      box-shadow:
+        0 4px 15px rgba(0,0,0,0.07);
+    }
+
+
+    .intro h2 {
+
+      margin-top: 0;
+
+      color: #0756a0;
+
+      font-size: clamp(24px, 5vw, 34px);
+    }
+
+
+    .intro p {
+
+      max-width: 720px;
+
+      margin: 12px auto;
+
+      font-size: 17px;
+    }
+
+
+    .intro strong {
+
+      color: #0756a0;
+    }
+
+
+    /* =========================
+       SECTION
+    ========================== */
+
+    section {
+
+      background: white;
+
+      padding: 28px 25px;
+
+      margin: 28px 0;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 4px 15px rgba(0,0,0,0.07);
+    }
+
+
+    section h2 {
+
+      font-size: clamp(21px, 4vw, 27px);
+
+      margin: 0 0 20px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #0b5cad,
+          #4a90e2
+        );
+
+      color: white;
+
+      padding: 12px 18px;
+
+      border-radius: 10px;
+    }
+
+
+    section h3 {
+
+      color: #0756a0;
+
+      font-size: 21px;
+
+      margin-top: 25px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .concept {
+
+      text-align: center;
+    }
+
+
+    .concept-message {
+
+      font-size: 20px;
+
+      font-weight: bold;
+
+      color: #0756a0;
+
+      margin: 25px 0;
+    }
+
+
+    .concept-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 15px;
+
+      margin-top: 25px;
+    }
+
+
+    .concept-box {
+
+      background: #f2f7fc;
+
+      padding: 20px;
+
+      border-radius: 12px;
+
+      border: 1px solid #d8e8f7;
+    }
+
+
+    .concept-box .icon {
+
+      font-size: 32px;
+
+      display: block;
+
+      margin-bottom: 8px;
+    }
+
+
+    .concept-box strong {
+
+      color: #0756a0;
+    }
+
+
+    /* =========================
+       COMIC
+    ========================== */
+
+    .comic-image {
+
+      width: 100%;
+
+      display: block;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 8px 20px rgba(0,0,0,0.15);
+
+      margin-bottom: 20px;
+    }
+
+
+    .comic-text {
+
+      text-align: center;
+
+      font-size: 16px;
+    }
+
+
+    /* =========================
+       NEWS
+    ========================== */
+
+    .news-intro {
+
+      text-align: center;
+
+      margin-bottom: 15px;
+    }
+
+
+    .news-frame {
+
+      width: 100%;
+
+      height: 460px;
+
+      border: none;
+
+      border-radius: 12px;
+
+      background: #f5f8fb;
+    }
+
+
+    /* =========================
+       CHARACTERS
+    ========================== */
+
+    .characters {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+
+    .character-card {
+
+      background: #f6f9fc;
+
+      border-radius: 15px;
+
+      padding: 22px;
+
+      text-align: center;
+
+      border: 1px solid #dceaf7;
+    }
+
+
+    .character-card .character-icon {
+
+      font-size: 45px;
+
+      margin-bottom: 8px;
+    }
+
+
+    .character-card h3 {
+
+      margin: 5px 0 10px;
+
+      font-size: 21px;
+    }
+
+
+    .character-card p {
+
+      margin: 0;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       NOTE
+    ========================== */
+
+    .note-section {
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffffff,
+          #eef6ff
+        );
+    }
+
+
+    .note-section p {
+
+      font-size: 17px;
+    }
+
+
+    .button {
+
+      display: inline-block;
+
+      background: #0b5cad;
+
+      color: white;
+
+      padding: 15px 30px;
+
+      border: 3px solid #000;
+
+      border-radius: 10px;
+
+      text-decoration: none;
+
+      font-size: 19px;
+
+      font-weight: bold;
+
+      box-shadow:
+        4px 4px 0 #08467c;
+
+      transition: 0.2s;
+
+      margin: 10px 0;
+    }
+
+
+    .button:hover {
+
+      background: #08467c;
+
+      transform: translate(2px,2px);
+
+      box-shadow:
+        2px 2px 0 #08467c;
+    }
+
+
+    /* =========================
+       LINKS
+    ========================== */
+
+    .links {
+
+      list-style: none;
+
+      padding: 0;
+
+      margin: 20px 0 0;
+    }
+
+
+    .links li {
+
+      margin: 10px 0;
+    }
+
+
+    .links a {
+
+      display: block;
+
+      background: #f4f8fc;
+
+      border: 1px solid #d9e7f3;
+
+      border-radius: 10px;
+
+      padding: 12px 15px;
+
+      color: #0756a0;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      transition: 0.2s;
+    }
+
+
+    .links a:hover {
+
+      background: #e5f1fc;
+
+      transform: translateX(3px);
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact {
+
+      text-align: center;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+
+      margin-top: 45px;
+
+      padding: 35px 20px;
+
+      background: #083f70;
+
+      color: white;
+
+      text-align: center;
+
+      font-size: 14px;
+
+      border-radius: 25px 25px 0 0;
+    }
+
+
+    footer strong {
+
+      font-size: 21px;
+    }
+
+
+    footer p {
+
+      margin: 8px 0;
+    }
+
+
+    /* =========================
+       SMARTPHONE
+    ========================== */
+
+    @media (max-width: 700px) {
+
+      body {
+
+        font-size: 15px;
+      }
+
+
+      header {
+
+        padding: 25px 12px 35px;
+      }
+
+
+      .rumor-logo {
+
+        width: 100%;
+
+        max-height: 260px;
+
+        border-radius: 16px;
+      }
+
+
+      nav {
+
+        gap: 6px;
+
+        padding: 10px;
+      }
+
+
+      nav a {
+
+        font-size: 13px;
+
+        padding: 8px 11px;
+      }
+
+
+      section {
+
+        padding: 22px 17px;
+
+        border-radius: 14px;
+      }
+
+
+      .concept-grid {
+
+        grid-template-columns: 1fr;
+      }
+
+
+      .characters {
+
+        grid-template-columns: 1fr;
+      }
+
+
+      .button {
+
+        width: 100%;
+
+        font-size: 17px;
+
+        padding: 14px 15px;
+      }
+
+
+      .news-frame {
+
+        height: 500px;
+      }
+
+    }
+
+  </style>
 
 </head>
+
+
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
-  <h1>rumor編集部</h1>
-  <p>AIと人が協力する、新しいニュース体験へ。</p>
+
+  <div class="container">
+
+    <!-- rumorメインビジュアル -->
+    <img
+      src="images/rumor_logo.png"
+      alt="rumor編集部"
+      class="rumor-logo"
+    >
+
+    <h1>rumor編集部</h1>
+
+    <p class="subtitle">
+      AIと人が協力する、新しいニュース体験へ。
+    </p>
+
+    <p class="catch">
+      世界で起きていることを、AIと人が一緒に整理し、
+      生活者の視点からわかりやすく届けます。
+    </p>
+
+  </div>
+
 </header>
 
-<nav>
-  <a href="#about">rumorとは</a>
-  <a href="#comic">4コマ漫画</a>
-  <a href="#news">最新ニュース</a>
-  <a href="#character">キャラクター</a>
-  <a href="#contact">お問い合わせ</a>
-</nav>
 
-<p>
-情報があふれる時代だからこそ、
-AIと人が力を合わせ、
-事実を丁寧に整理し、
-多角的な視点からニュースを届けます。
-</p>
 
-<p>
-ニュースを読む。<br>
-ニュースを理解する。<br>
-そして、自分で考える。
-</p>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-<section id="about">
-<h2>🌐 rumorとは</h2>
+<div class="container">
 
-<p>
-rumorは、AIと人が協力して運営するニュースプロジェクトです。
-</p>
+  <nav>
 
-<p>
-私たちは、考え方を押し付けません。
-</p>
+    <a href="#about">🌐 rumorとは</a>
 
-<p>
-読者一人ひとりが、
-自分の頭で考え、
-自分らしい判断ができるよう、
-「考える材料」を届けます。
-</p>
+    <a href="#comic">🌸 4コマ漫画</a>
 
-</section>
+    <a href="#news">📰 最新ニュース</a>
 
-<section id="comic">
+    <a href="#character">🤖 キャラクター</a>
 
-<h2>🌸 今日の4コマ漫画</h2>
+    <a href="#note">📖 note</a>
 
-<img src="images/じっトンちぃモルト.png"
-     alt="じっトン・ちぃ・モルト"
-     style="width:100%; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
+    <a href="#contact">✉️ お問い合わせ</a>
 
-<p>
-ニュースを読んだあと、
-少し心が温かくなる物語。
-</p>
+  </nav>
 
-<p>
-ちぃ・モルト・じっトン博士が、
-今日もあなたを待っています。
-</p>
 
-<p>
-※ 毎日更新予定
-</p>
 
-</section>
+  <!-- =========================
+       INTRO
+  ========================== -->
 
-<section id="news">
+  <div class="intro">
+
+    <h2>
+      世界の変化を、もっと身近に。
+    </h2>
+
+    <p>
+      情報があふれる時代だからこそ、
+      ただニュースを並べるのではなく、
+      <strong>「何が起きているのか」</strong>
+      を一緒に考える。
+    </p>
+
+    <p>
+      rumor編集部は、
+      AIと人が力を合わせて、
+      ニュースを整理・分析し、
+      読者に届けるニュースプロジェクトです。
+    </p>
+
+  </div>
+
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section id="about" class="concept">
+
+    <h2>🌐 rumorとは</h2>
+
+    <p>
+      rumorは、
+      AIと人が協力して運営する
+      ニュースプロジェクトです。
+    </p>
+
+    <p class="concept-message">
+      ニュースを知る。<br>
+      ニュースを理解する。<br>
+      そして、自分で考える。
+    </p>
+
+    <p>
+      私たちは、特定の考え方を
+      押し付けることを目的としていません。
+    </p>
+
+    <p>
+      複雑なニュースを整理し、
+      背景や社会への影響を考えるための
+      「材料」を届けます。
+    </p>
+
+
+    <div class="concept-grid">
+
+      <div class="concept-box">
+
+        <span class="icon">🤖</span>
+
+        <strong>AIが調べる</strong>
+
+        <p>
+          複数のAIを活用し、
+          ニュースや情報を整理します。
+        </p>
+
+      </div>
+
+
+      <div class="concept-box">
+
+        <span class="icon">🔎</span>
+
+        <strong>AIが考える</strong>
+
+        <p>
+          一つの視点だけでなく、
+          背景や影響を多角的に見ます。
+        </p>
+
+      </div>
+
+
+      <div class="concept-box">
+
+        <span class="icon">👤</span>
+
+        <strong>人が届ける</strong>
+
+        <p>
+          最終的に人が内容を確認し、
+          読者に伝わる形へ整えます。
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       COMIC
+  ========================== -->
+
+  <section id="comic">
+
+    <h2>🌸 今日の4コマ漫画</h2>
+
+    <img
+      src="images/じっトンちぃモルト.png"
+      alt="rumor編集部の4コマ漫画。ちぃ、じっトン、モルトが登場します。"
+      class="comic-image"
+    >
+
+    <div class="comic-text">
+
+      <p>
+        ニュースを読んだあと、
+        ちょっと心が温かくなる物語。
+      </p>
+
+      <p>
+        ちぃ・モルト・じっトン博士が、
+        今日もあなたを待っています。
+      </p>
+
+      <p>
+        ※4コマ漫画は順次更新予定です。
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       NEWS
+  ========================== -->
+
+  <section id="news">
+
     <h2>📰 最新ニュース</h2>
 
+    <p class="news-intro">
+      rumor編集部が届ける、
+      最新ニュースと世界の変化をご覧ください。
+    </p>
+
     <iframe
-        src="latest-news.html"
-        style="width:100%; height:420px; border:none;">
+      src="latest-news.html"
+      class="news-frame"
+      title="rumor編集部 最新ニュース">
     </iframe>
 
-</section>
+  </section>
 
-<section id="character">
-  <h2>🧑‍💻 キャラクター紹介</h2>
 
-  <h3>ちぃ</h3>
-  <p>明るくてテンポの良いニュース担当。</p>
 
-  <h3>じっとん</h3>
-  <p>深掘りと分析が得意。</p>
+  <!-- =========================
+       CHARACTERS
+  ========================== -->
 
-  <h3>モルト</h3>
-  <p>世界観と物語性を担当。</p>
-</section>
+  <section id="character">
 
-<section>
+    <h2>🤖 rumor編集部の仲間たち</h2>
 
-  <h2>📝 最新記事</h2>
+    <div class="characters">
 
-  <p>
-    最新のニュース解説や4コマ漫画は、noteで毎日公開しています。
-  </p>
 
-  <p style="text-align:center;">
-    <a href="https://note.com/legal_dill5110"
+      <div class="character-card">
+
+        <div class="character-icon">
+          🌸
+        </div>
+
+        <h3>ちぃ</h3>
+
+        <p>
+          明るくテンポの良いニュース担当。
+          「これって私たちの生活にどう関係するの？」
+          という視点からニュースを見つめます。
+        </p>
+
+      </div>
+
+
+      <div class="character-card">
+
+        <div class="character-icon">
+          👴
+        </div>
+
+        <h3>じっトン</h3>
+
+        <p>
+          深掘りと分析が得意。
+          難しいニュースも、
+          できるだけわかりやすく解説します。
+        </p>
+
+      </div>
+
+
+      <div class="character-card">
+
+        <div class="character-icon">
+          🤖
+        </div>
+
+        <h3>モルト</h3>
+
+        <p>
+          世界観と物語性を担当するロボット。
+          rumorの世界をちょっと楽しく、
+          ちょっと不思議にしてくれます。
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       NOTE
+  ========================== -->
+
+  <section id="note" class="note-section">
+
+    <h2>📖 最新記事を読む</h2>
+
+    <p>
+      最新のニュース解説や、
+      rumor編集部の記事はnoteで公開しています。
+    </p>
+
+    <p>
+      もっと詳しく知りたい方は、
+      noteの本文・解説をご覧ください。
+    </p>
+
+    <a
+      href="https://note.com/legal_dill5110"
       class="button"
-      target="_blank">
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       📖 noteで最新記事を読む
     </a>
-  </p>
+
+  </section>
 
 
-  <h2>🔗 導線（リンク）</h2>
-  <ul>
-    <li><a href="https://note.com/legal_dill5110" target="_blank">📖 note 世界ニュース本文・詳しい解説（最新記事）</a></li>
-    <li><a href="https://www.youtube.com/@rumor_93682" target="_blank">▶️ YouTube（動画・ショート）</a></li>
-    <li><a href="https://www.tiktok.com/@kirokiro9922" target="_blank">🎵 TikTok（rumor編集部・ショート動画）</a></li>
-    <li><a href="https://line.me/ti/g2/Vy73YCOIET1tnOe6zUcpDcqdNujFiz4GuP_P2Q?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">💬 LINEオープンチャット（世界ニュース【ちぃ＆じっトン】）</a></li>
-    <li><a href="https://www.instagram.com/rumor_mirror?igsh=MTRxeWZ6enBzbjg5bw==" target="_blank">📷 Instagram（世界観・キャラ・ニュース紹介）</a></li>
-    <li><a href="https://x.com/sonmasakaz81202" target="_blank">𝕏  X（ちぃ＆じっトンのツィート）</a></li>
-  </ul>
-</section>
 
-<section id="contact">
-  <h2>✉️ お問い合わせ</h2>
-  <p>rumor編集部への連絡はこちらから。</p>
-</section>
+  <!-- =========================
+       LINKS
+  ========================== -->
+
+  <section>
+
+    <h2>🔗 rumor編集部をもっと見る</h2>
+
+    <ul class="links">
+
+      <li>
+        <a
+          href="https://note.com/legal_dill5110"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📖 note｜ニュース本文・詳しい解説
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          href="https://www.youtube.com/@rumor_93682"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ▶️ YouTube｜動画・ショート
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          href="https://www.tiktok.com/@kirokiro9922"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🎵 TikTok｜rumor編集部・ショート動画
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          href="https://line.me/ti/g2/Vy73YCOIET1tnOe6zUcpDcqdNujFiz4GuP_P2Q?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💬 LINEオープンチャット｜世界ニュース【ちぃ＆じっトン】
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          href="https://www.instagram.com/rumor_mirror?igsh=MTRxeWZ6enBzbjg5bw=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📷 Instagram｜世界観・キャラ・ニュース紹介
+        </a>
+      </li>
+
+
+      <li>
+        <a
+          href="https://x.com/sonmasakaz81202"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          𝕏 X｜ちぃ＆じっトン
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section id="contact" class="contact">
+
+    <h2>✉️ お問い合わせ</h2>
+
+    <p>
+      rumor編集部へのお問い合わせ窓口は、
+      現在準備中です。
+    </p>
+
+    <p>
+      開設まで、もうしばらくお待ちください。
+    </p>
+
+  </section>
+
+</div>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
-  <p><strong>rumor編集部</strong></p>
+
+  <p>
+    <strong>rumor編集部</strong>
+  </p>
 
   <p>
     AIと人が協力する、新しいニュース体験へ。
+  </p>
+
+  <p>
+    世界の変化を、もっと身近に。
   </p>
 
   <p>
@@ -305,13 +1232,11 @@ rumorは、AIと人が協力して運営するニュースプロジェクトで�
   </p>
 
   <p>
-    📝 note：公開準備中
-  </p>
-
-  <p>
     © 2026 rumor編集部
   </p>
+
 </footer>
 
- </body>
+
+</body>
 </html>
