@@ -124,21 +124,25 @@
 
     header {
 
+      max-width: 1000px;
+    
+      margin: 0 auto;
+    
       background:
         linear-gradient(
           135deg,
           #0756a0,
           #368be0
         );
-
+    
       color: white;
-
+    
       padding: 35px 20px 45px;
-
+    
       text-align: center;
-
+    
       border-radius: 0 0 30px 30px;
-
+    
       box-shadow:
         0 8px 25px rgba(0,0,0,0.12);
     }
@@ -699,7 +703,12 @@
     ========================== */
 
     @media (max-width: 700px) {
-
+      
+      header {
+        max-width: none;
+        margin: 0;
+      }
+      
       body {
 
         font-size: 15px;
