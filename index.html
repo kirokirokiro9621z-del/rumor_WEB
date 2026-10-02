@@ -1259,5 +1259,55 @@
 </footer>
 
 
+<style>
+  #bgmBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    padding: 14px 22px;
+    border: 3px solid #fff;
+    border-radius: 999px;
+    background: #ff8c00;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    animation: bgmPulse 1.6s ease-in-out infinite;
+  }
+  #bgmBtn.playing {
+    background: #555;
+    animation: none;
+  }
+  @keyframes bgmPulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.1); }
+  }
+</style>
+
+<audio id="bgm" src="music/Second_Floor_Window.mp3" loop preload="auto"></audio>
+<button id="bgmBtn">🎵 テーマ曲を聴く</button>
+
+<script>
+  const bgm = document.getElementById('bgm');
+  const btn = document.getElementById('bgmBtn');
+  bgm.volume = 0.4;
+
+  btn.addEventListener('click', () => {
+    if (bgm.paused) {
+      bgm.play();
+      btn.textContent = '⏸ 音楽を止める';
+      btn.classList.add('playing');
+    } else {
+      bgm.pause();
+      btn.textContent = '🎵 テーマ曲を聴く';
+      btn.classList.remove('playing');
+    }
+  });
+</script>
+
+
+
 </body>
 </html>
